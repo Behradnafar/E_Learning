@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Convertors\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Security\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.DevOps.ContentDelivery.DotNetCliTools.UploadAzureBlobContainer" Version="1.0.4" />
+    <PackageReference Include="DotNetCli" Version="0.0.6" />
+    <PackageReference Include="Microsoft.DotNet.Cli.Utils" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E_Learning.DataLayer\E_Learning.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>
